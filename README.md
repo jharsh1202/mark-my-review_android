@@ -1,5 +1,6 @@
 # Mark_My_Review
 
+The project is loosely based on the ZXing Android Barcode Scanner application, but is not affiliated with the official ZXing project.
 
 Reason: Sole purpose to create this was learning.
 
@@ -12,7 +13,12 @@ How to Use:
 3. now click on 'create QR' button if you want to generate and download QR code for same form you created. 
 (QR Image gets downloaded in directory 'Android/data/com.example.markmyreview' )
 
-edit the manifest file as:
+Just clone this directory and make commits as you wish 
+Happy learning!!
+
+This app uses 
+
+Edit the manifest file as:
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
@@ -154,4 +160,10 @@ subprojects {
     ext.androidTargetSdk = 28
     ext.zxingCore = 'com.google.zxing:core:3.4.0'
 }
+```
+settings.gradle (Project)
+```
+include ':app'
+include ':zxing-android-embedded'
+rootProject.name = "Mark My Review"
 ```

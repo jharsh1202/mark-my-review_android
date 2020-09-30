@@ -389,6 +389,7 @@ public class IntentIntegrator {
         return new IntentResult(intent);
     }
 
+
     private static List<String> list(String... values) {
         return Collections.unmodifiableList(Arrays.asList(values));
     }

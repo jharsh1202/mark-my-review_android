@@ -22,10 +22,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
     }
 
     public void scanBarcode(View view) {
         new IntentIntegrator(this).initiateScan();
+    }
+
+    public void createBarcode(View view) {
+        startActivity(new Intent(getApplicationContext(),FillFeedback.class).
+                putExtra("url","https://accounts.google.com/signin/v2/identifier?service=wise&passive=1209600&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fu%2F0%2Fcreate&followup=https%3A%2F%2Fdocs.google.com%2Fforms%2Fu%2F0%2Fcreate&ltmpl=forms&flowName=GlifWebSignIn&flowEntry=ServiceLogin"));
     }
 
 

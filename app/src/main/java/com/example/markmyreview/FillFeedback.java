@@ -53,6 +53,8 @@ public class FillFeedback extends AppCompatActivity {
                 super.onPageFinished(view, url);
                 //to hide progress bar when finish loading page
                 progressBar.setVisibility(View.GONE);
+                MainActivity.editedUrl=webView.getUrl();
+                Log.i("pageloaded",MainActivity.editedUrl);
             }
         });
 

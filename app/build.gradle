@@ -61,7 +61,7 @@ dependencies {
     // If you use this from an external project, use the following instead:
     //   implementation 'com.journeyapps:zxing-android-embedded:<version>'
     implementation project(':zxing-android-embedded')
-
+    implementation 'androidmads.library.qrgenearator:QRGenearator:1.0.4'
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.legacy:legacy-support-v13:1.0.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.1'

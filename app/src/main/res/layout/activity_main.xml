@@ -24,10 +24,22 @@
         android:id="@+id/create"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
         android:background="#353030"
         android:onClick="createBarcode"
         android:padding="10dp"
         android:text="CREATE"
+        android:textColor="#C6C1C1"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/generateQR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#353030"
+        android:onClick="generateQR"
+        android:padding="10dp"
+        android:text="generate QR"
         android:textColor="#C6C1C1"
         android:textSize="24sp" />
 

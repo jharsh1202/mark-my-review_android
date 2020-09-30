@@ -17,12 +17,12 @@ import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
 public class MainActivity extends AppCompatActivity {
+    public static String editedUrl="";
     public final int CUSTOMIZED_REQUEST_CODE = 0x0000ffff;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
     }
 
     public void scanBarcode(View view) {
@@ -34,6 +34,15 @@ public class MainActivity extends AppCompatActivity {
                 putExtra("url","https://accounts.google.com/signin/v2/identifier?service=wise&passive=1209600&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fu%2F0%2Fcreate&followup=https%3A%2F%2Fdocs.google.com%2Fforms%2Fu%2F0%2Fcreate&ltmpl=forms&flowName=GlifWebSignIn&flowEntry=ServiceLogin"));
     }
 
+    public void generateQR(View view){
+        if (editedUrl.length()<=0 || !editedUrl.contains("/edit")){
+            Toast.makeText(this, "Please Create a Form First", Toast.LENGTH_SHORT).show();
+        }
+        else{
+            startActivity(new Intent(this, CreateQR.class).putExtra("editedUrl",editedUrl));
+            finish();
+        }
+    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {

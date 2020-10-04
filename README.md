@@ -16,14 +16,11 @@ How to Use:
 Just clone this directory and make commits as you wish 
 Happy learning!!
 
-Screenshots:
+
 ![image](https://user-images.githubusercontent.com/41900044/95005795-1e2b4280-061a-11eb-999b-6ab6d86e06f8.png)
 ![image](https://user-images.githubusercontent.com/41900044/95005814-4155f200-061a-11eb-9aa8-410dac5e8150.png)
 ![image](https://user-images.githubusercontent.com/41900044/95005821-65193800-061a-11eb-9e27-bb089cb3016f.png)
 ![image](https://user-images.githubusercontent.com/41900044/95005825-76624480-061a-11eb-96b9-3a9eb24ec7f3.png)
-
-
-This app uses 
 
 Edit the manifest file as:
 ```
